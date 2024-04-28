@@ -1,16 +1,17 @@
 import React from 'react'
 
+//This component searchs for recent transactions
+function SearchBar({searchValue, SetSearchfunction}) {
 
-function SearchBar({searchValue, funcSetSearch}) {
-
+    //This function updates the search value
     function handleSearch(e){
-        funcSetSearch(e.target.value)
+        SetSearchfunction(e.target.value)
     }
     
         return (<>
             <input 
                 type="text" 
-                className="SearchInput"  
+                className="Search-Input"  
                 placeholder="Search Your Recents Transactions..."
                 value={searchValue}
                 onChange={handleSearch}

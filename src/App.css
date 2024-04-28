@@ -17,18 +17,13 @@
   font-size: 1.8em;
 
 }
-.Search-input{
-  width: 50%;
-  padding: 0.5em;
-  border: solid 2px  rgb(122, 6, 6);
-}
-.search-button{
-  width: 20%;
+.Search-Input{
+  width: 100%;
   padding: 0.9em;
   border: solid 2px  rgb(122, 6, 6);
-
-
+  border-radius: 0.5em;;
 }
+
 .Transaction{
   width: 100%;
   padding: 0.9em;
@@ -36,19 +31,11 @@
   border: 1px solid  rgb(122, 6, 6);
   border-radius: 0.5em;
 }
-.Transaction form {
+ .Transaction form {
   display:flex;
-  flex-grow: 1;
   gap: 0.5em;
   width: 100%;
-  padding: 0.9em;
-}
-.form input{
-  padding: 0.9em 0.5em;
-  width: 100%;
-  border: 1px solid blueviolet;
-  outline: none;
-  border-radius: 7px;
+  padding: 0.9em; 
 }
 .Transaction table{
   width: 100%;
@@ -58,3 +45,48 @@
   border-radius: 0.5em;
 
 }
+.Transaction form input:hover,
+.SearchInput:hover{
+  border: 1px solid bisque;
+}
+.Transaction button{
+  width: fit-content;
+  padding: 0.7em 1em;
+  border-radius: 0.8em;
+  border: solid 2px rgb(122, 6, 6);
+  font-weight: 400;
+}
+table {
+  width: 100%; 
+  border-collapse: inherit;
+  border-spacing: 0; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  border: 1px solid rgb(116, 25, 25);
+  }
+  thead{
+    border-radius: 30px;
+  }
+  tbody td,
+  thead th{
+    padding: 0.6em;
+    border-bottom: 1px solid rgb(116, 25, 25);
+    border-right: 1px solid rgb(116, 25, 25);
+  }
+  tbody tr:nth-of-type(odd) {
+    background-color: rgb(238, 227, 213);
+    
+}
+  tbody td:last-child{
+    border-right: none;
+  }
+  tbody tr:last-child td{
+    border-bottom: none;
+  }
+  .Transaction form input{
+    flex-grow: 1;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 0.5em 0.9em;
+  }

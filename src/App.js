@@ -5,35 +5,30 @@ import TransactionTable from './Components/TransactionTable'
 function App() {
   const TransactionRecords = [
     { 
-      id: 1,
       date: '2024-04-27',
       description: 'Grocery shopping at Naivas ', 
       category: 'Groceries',
       amount: 50.00,
     },
     {
-      id: 2,
       date: '2024-04-26',
       description: 'Movie tickets and popcorn', 
       category: 'Entertainment',
       amount: 20.00,
     },
     {
-      id: 3,
       date: '2024-04-25',
       description: 'Salary deposit for April', 
       category: 'Salary',
       amount: 2000.00,
     },
     {
-      id: 4,
       date: '2024-04-24',
       description: 'Payment for electricity bill', 
       category: 'Bills',
       amount: 150.00,
     },
     {
-      id: 5,
       date: '2024-04-23',
       description: 'Gas fill-up at Shell', 
       category: 'Transportation',
